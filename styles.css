@@ -18,6 +18,14 @@
     padding: 10px 0;
     text-align: center;
   }
+  .navbar-nav .nav-link {
+    color: red !important;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: darkred !important;
+  }
+  
   
 .My{
   color: red;
@@ -70,53 +78,79 @@ a .My{
   
    .projects, .contact {
     background-color: #000000;
-    color: aqua;
+    color:  #ffc107;
     font-family: Goudy Stout;
   }
   
-  .about{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    font-family: Goudy Stout;
-  }
+  .section.about {
+  background-color: #1e293b; /* Midnight Blue */
+  color: #ffffff; /* White Text */
+  padding: 50px 20px;
+}
+
+.section.about h2 {
+  color: #ffc107; /* Yellow for Header */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section.about #image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* Circular Image */
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger Shadow */
+}
+
+
+#About-me {
+  margin-top: 20px;
+  text-align: justify;
+  color: #e9ecef; /* Light Gray Text for Content */
+  font-weight:15px;
+}
+
  
   p{
     color: #000000;
     font-family: Lucida Calligraphy;
   }
   
-  .About-me{
-    color: red;
-  }
-  h1, h2 {
-    margin-bottom: 20px;
-    color: #07b4f8;
+
+  
+  .section.projects {
+    background-color:#1e293b;/* Navy Blue */
+    color: #ffffff; /* White Text */
   }
   
-  .project-list {
-    display: flex;
-    justify-content: space-around;
+  .section.projects h2 {
+    color: #ffc107; /* Yellow for Section Title */
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .project-item {
-   
-    color: #f80707;
-    background: #ffffff;
+    background-color: #6c757d; /* Gray Cards */
+    border: none;
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 8px;
-    width: 45%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle Shadow */
   }
-  .skill-list  {
-    display: flex;
-    justify-content: space-around;
+  
+  .project-item h3 {
+    color: #ffc107; /* Yellow for Headings */
   }
-
-  .skill{
-    background: #0026ff;
-    padding: 10px;
-    border-radius: 8px;
-    width: 30%;
+  
+  .project-item p {
+    color: #e9ecef; /* Light Gray for Text */
   }
+  
+  .project-item:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced Shadow on Hover */
+    transform: scale(1.02); /* Slightly Scales on Hover */
+  }
+  
   form {
     max-width: 600px;
     margin: 0 auto;
@@ -137,6 +171,13 @@ a .My{
     padding: 10px 20px;
     cursor: pointer;
   }
+  #contact iframe {
+    border: none;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
   
   footer {
     background-color: #333;
