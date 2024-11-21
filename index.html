@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Ubani Solomon's portfolio showcasing web development and affiliate marketing projects.">
+  <meta name="keywords" content="Front-End Developer, Web Development, Portfolio, Affiliate Marketing, HTML, CSS, JavaScript">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
@@ -11,113 +13,171 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <body>
   <header>
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    
     
   </header>
   
   <section id="home" class="section home">
     <h1>Welcome To My<span id="wss"></span></h1>
-    <!-- <h1>Welcome to My <button class="My">Portfolio</button>  </h1> -->
     <p>Hi, I'm Ubani Solomon Ikedi, a front-end developer.</p>
   </section>
 
   <section id="about" class="section about">
-
     <h2>About Me</h2>
-    <div class="container">
-      
-    
-      
-      
-      <img src="mine e.jpg" id="image" onmouseover="newPicture()" onmouseout="oldPicture()"class="d-center w-60 h-20" alt="">
-  </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="mine-e.jpg" id="image"onmouseover="newPicture()" onmouseout="oldPicture()" class="img-fluid rounded-circle" alt="Ubani Solomon">
+      </div>
+      <div class="col-md-6">
+        <div id="About-me"></div>
+      </div>
+    </div>
+  
 </span>
 <br>
 
-<div id="About-me"></div>
+
 
   </section>
 
   
    <!-- Carousel Section -->
    <section class="carousel">
-    <div class="slides">
-        <img src="aff.jpeg" alt="School Image 1">
-        <img src="do.jpeg" alt="School Image 2">
-        <img src="fre.jpeg" alt="School Image 3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="aff.jpeg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="do.jpeg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="fre.jpeg" class="d-block w-100" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    
     
 </section>
   <br>
-<section id="projects" class="section projects">
-<h2>WHAT I DO</h2>
-<div class="project-list">
-<div class="project-item">
-<h3>FRONT END DEVELOPER</h3>
-<p>Web Design: Crafting intuitive and attractive layouts.</p>
-<p> Building responsive and interactive interfaces with HTML, CSS, and JavaScript.</P><br>
-<p>Integrate APIs and ensure seamless data flow between the front end and back end.</p><br>
-<p>Write efficient code to improve page load times and overall performance.</p><br>
-<p> Ensures feasibility of UI/UX designs to fit in web design structure,</p><br>
-<p>Identify and debug code to ensure a smooth user experience </p>
-</div>
-<div class="project-item">
-
-<h3>AFFILIATE MARKETER</h3>
-<p><p>As an affiliate marketer and freelancer, I help businesses grow and succeed online.<br> My services include:</p><br>
-
-<P>Affiliate Marketing:</b> Promoting products and services through strategic partnerships to drive traffic and increase sales.<br>
-Freelance Services: Providing a range of professional services including web development, digital marketing, and content creation to meet diverse client needs.<br>
-Performance Analytics: Utilizing data to track, analyze, and optimize marketing campaigns for better results.<br>
-Client Collaboration: Working closely with clients to understand their goals and deliver customized solutions.<br>
-SBy leveraging my skills in marketing and freelancing, I drive business growth and create impactful online experiences.</p>
-</p>
-</div>
-</div>
-  
-<section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Project 1</h3>
-        <img src="own.jpg">
-        <p>A user-friendly platform designed for showcasing real estate properties, featuring detailed property listings, interactive image galleries, and contact options for prospective buyers or renters. 
-        The website aims to provide a seamless browsing experience for clients looking to buy, rent, or invest in real estate.</p>
-      </div>
-      <div class="project-item">
-        <h3>Project 2</h3>
-        <img src="moo.png">
-        <p>A robust security-focused website offering detailed information about services such as surveillance, cybersecurity, and protective solutions. 
-        It highlights key features, client testimonials, and easy ways to request consultations or support for security needs.</p>
+  <section id="projects" class="section projects py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">WHAT I DO</h2>
+      <div class="row">
+        <!-- Front-End Developer -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 border rounded shadow">
+            <h3>FRONT END DEVELOPER</h3>
+            <ul class="list-unstyled">
+              <li>💻 Web Design: Crafting intuitive and attractive layouts.</li>
+              <li>📱 Building responsive and interactive interfaces with HTML, CSS, and JavaScript.</li>
+              <li>🔗 Integrating APIs to ensure seamless data flow between front-end and back-end.</li>
+              <li>⚡ Writing efficient code to improve page load times and performance.</li>
+              <li>🎨 Ensuring feasibility of UI/UX designs.</li>
+              <li>🐞 Debugging to deliver a smooth user experience.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Affiliate Marketer -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 border rounded shadow">
+            <h3>AFFILIATE MARKETER</h3>
+            <ul class="list-unstyled">
+              <li>🚀 Promoting products and services through strategic partnerships.</li>
+              <li>📈 Providing professional services like web development and digital marketing.</li>
+              <li>📊 Analyzing data to optimize marketing campaigns.</li>
+              <li>🤝 Collaborating with clients to deliver tailored solutions.</li>
+              <li>🌐 Leveraging skills in marketing to drive business growth.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  
+  <section id="projects" class="section projects py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow">
+            <img src="own.jpg" class="card-img-top img-fluid" alt="Real Estate Platform">
+            <div class="card-body">
+              <h3 class="card-title">Project 1: Real Estate Platform</h3>
+              <p class="card-text">
+                A user-friendly platform designed for showcasing real estate properties, featuring detailed property listings, interactive galleries, and contact options for prospective buyers or renters.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow">
+            <img src="moo.png" class="card-img-top img-fluid" alt="Security Website">
+            <div class="card-body">
+              <h3 class="card-title">Project 2: Security Website</h3>
+              <p class="card-text">
+                A robust security-focused website offering detailed information about services like surveillance, cybersecurity, and protective solutions. Highlights include client testimonials and easy consultation options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   
 
   <section id="contact" class="section contact">
-    <form action="contact.php" method="POST">
-      <label for="text">Name:</label><br>
-      <input type="text" id="text" name="text" required><br><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-      <button type="submit">Submit</button>
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScNVoNomFKDSr4X5yAR3zi138dIhWFGkPE-QjieZbmdtfZSGw/viewform?embedded=true"
+        width="100%"
+        height="600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+      </iframe>
+    </section>
+    
+    
   </section>
 
-  <footer>
-    <p>&copy; 2024 Solomon. All rights reserved.</p>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Ubani Solomon. All rights reserved.</p>
   </footer>
+  
   
   <script src="index.js"></script>
 </body>
